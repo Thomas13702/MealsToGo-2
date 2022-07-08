@@ -1,21 +1,20 @@
 import React from "react";
-import styled from "styled-components/native";
-import { StyleSheet, View, Image } from "react-native";
-import { Card } from "react-native-paper";
 import { SvgXml } from "react-native-svg";
 import star from "../../../../assets/star";
 import open from "../../../../assets/open";
 import { Spacer } from "../../../components/spacer/spacer.component";
 import { Text } from "../../../components/typography/text.component";
 
-import { Icon } from "./restaurant-info-card.styles";
-import { RestaurantCard } from "./restaurant-info-card.styles";
-import { RestaurantCardCover } from "./restaurant-info-card.styles";
-import { Address } from "./restaurant-info-card.styles";
-import { Info } from "./restaurant-info-card.styles";
-import { Rating } from "./restaurant-info-card.styles";
-import { Section } from "./restaurant-info-card.styles";
-import { SectionEnd } from "./restaurant-info-card.styles";
+import {
+  Icon,
+  RestaurantCard,
+  RestaurantCardCover,
+  Address,
+  Info,
+  Rating,
+  Section,
+  SectionEnd,
+} from "./restaurant-info-card.styles";
 
 export const RestaurantInfoCard = ({ restaurant = {} }) => {
   const {
