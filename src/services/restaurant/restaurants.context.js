@@ -46,7 +46,6 @@ export const RestaurantsContextProvider = ({ children }) => {
     }
   }, [location]);
 
-  //   console.log(restaurants);
   return (
     <RestaurantsContext.Provider value={{ restaurants, isLoading, error }}>
       {children}
