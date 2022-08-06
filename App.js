@@ -6,12 +6,8 @@ import { RestaurantsContextProvider } from "./src/services/restaurant/restaurant
 import { LocationContextProvider } from "./src/services/location/location.context";
 import { FavouritesContextProvider } from "./src/services/favourites/favourites.context";
 import { Navigation } from "./src/infrastructure/navigation";
+
 import firebase from "firebase/compat/app";
-
-import { initializeApp } from "firebase/app";
-
-initializeApp(firebaseConfig);
-
 import "firebase/compat/auth";
 import "firebase/compat/firestore";
 
@@ -33,6 +29,10 @@ const firebaseConfig = {
   appId: APP_ID,
 };
 
+if (!firebase.apps.length) {
+  firebase.initializeApp(firebaseConfig);
+}
+
 import {
   useFonts as useOswald,
   Oswald_400Regular,
@@ -45,7 +45,7 @@ export default function App() {
   useEffect(() => {
     firebase
       .auth()
-      .signInWithEmailAndPassword("email", "password")
+      .signInWithEmailAndPassword("email@tom.com", "password")
       .then((user) => {
         console.log(user);
         setIsAuthenticated(true);
