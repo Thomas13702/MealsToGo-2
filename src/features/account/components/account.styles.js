@@ -13,3 +13,10 @@ export const AccountBackground = ({ children, image }) => {
     <StyledBackgroundImage source={image}>{children}</StyledBackgroundImage>
   );
 };
+
+export const AccountCover = styled.View`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+`;
