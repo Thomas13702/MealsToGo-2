@@ -29,7 +29,7 @@ export const AuthenticationContextProvider = ({ children }) => {
       }
     };
     getUser();
-  }, []);
+  }, [user]);
 
   const onLogin = (email, password) => {
     setIsLoading(true);
