@@ -1,7 +1,8 @@
-import React, { useState, createContext } from "react";
+import React, { useState, createContext, useEffect } from "react";
 import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 import "firebase/compat/firestore";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 import { loginRequest } from "./authentication.service";
 
@@ -12,6 +13,24 @@ export const AuthenticationContextProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [error, setError] = useState([]);
 
+  useEffect(() => {
+    const getUser = async () => {
+      const user = await AsyncStorage.getItem("user");
+
+      if (user) {
+        setUser(user);
+      } else {
+        firebase.auth().onAuthStateChanged((usr) => {
+          if (usr) {
+            setUser(usr);
+          } else {
+          }
+        });
+      }
+    };
+    getUser();
+  }, []);
+
   const onLogin = (email, password) => {
     setIsLoading(true);
     setError(null);
@@ -19,7 +38,10 @@ export const AuthenticationContextProvider = ({ children }) => {
     loginRequest(email, password)
       .then((u) => {
         setUser(u);
+        // console.log(u);
+        AsyncStorage.setItem("user", JSON.stringify(u));
         setIsLoading(false);
+        setError(null);
       })
       .catch((error) => {
         setError(error.toString());
@@ -32,17 +54,35 @@ export const AuthenticationContextProvider = ({ children }) => {
       setError("Error: Passwords do not match");
       return;
     }
+    setIsLoading(true);
+    setError(null);
 
     firebase
       .auth()
       .createUserWithEmailAndPassword(email, password)
       .then((u) => {
         setUser(u);
+        AsyncStorage.setItem("user", JSON.stringify(u));
         setIsLoading(false);
+        setError(null);
       })
       .catch((error) => {
         setError(error.toString());
         setIsLoading(false);
+      });
+  };
+
+  const onLogout = async () => {
+    await AsyncStorage.removeItem("user");
+
+    firebase
+      .auth()
+      .signOut()
+      .then(() => {
+        setUser(null);
+      })
+      .catch((error) => {
+        console.log(error);
       });
   };
 
@@ -55,6 +95,7 @@ export const AuthenticationContextProvider = ({ children }) => {
         error,
         onLogin,
         onRegister,
+        onLogout,
       }}
     >
       {children}
