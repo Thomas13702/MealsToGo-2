@@ -15,10 +15,11 @@ export const AuthenticationContextProvider = ({ children }) => {
 
   useEffect(() => {
     const getUser = async () => {
-      const user = await AsyncStorage.getItem("user");
+      const user1 = await AsyncStorage.getItem("user");
+      // console.log(user1);
 
-      if (user) {
-        setUser(user);
+      if (user1) {
+        setUser(JSON.parse(user1));
       } else {
         firebase.auth().onAuthStateChanged((usr) => {
           if (usr) {
@@ -29,27 +30,38 @@ export const AuthenticationContextProvider = ({ children }) => {
       }
     };
     getUser();
-  }, [user]);
+  }, []);
 
-  const onLogin = (email, password) => {
+  const onLogin = async (email, password) => {
     setIsLoading(true);
     setError(null);
 
-    loginRequest(email, password)
-      .then((u) => {
-        setUser(u);
-        // console.log(u);
-        AsyncStorage.setItem("user", JSON.stringify(u));
-        setIsLoading(false);
-        setError(null);
-      })
-      .catch((error) => {
-        setError(error.toString());
-        setIsLoading(false);
-      });
+    try {
+      const u = await loginRequest(email, password);
+      setUser(u);
+      await AsyncStorage.setItem("user", JSON.stringify(u));
+      setIsLoading(false);
+      setError(null);
+    } catch (error) {
+      setError(error.toString());
+      setIsLoading(false);
+    }
+
+    // loginRequest(email, password)
+    //   .then((u) => {
+    //     setUser(u);
+    //     // console.log(u);
+    //     AsyncStorage.setItem("user", u);
+    //     setIsLoading(false);
+    //     setError(null);
+    //   })
+    //   .catch((error) => {
+    //     setError(error.toString());
+    //     setIsLoading(false);
+    //   });
   };
 
-  const onRegister = (email, password, repeatedPassword) => {
+  const onRegister = async (email, password, repeatedPassword) => {
     if (password !== repeatedPassword) {
       setError("Error: Passwords do not match");
       return;
@@ -57,19 +69,32 @@ export const AuthenticationContextProvider = ({ children }) => {
     setIsLoading(true);
     setError(null);
 
-    firebase
-      .auth()
-      .createUserWithEmailAndPassword(email, password)
-      .then((u) => {
-        setUser(u);
-        AsyncStorage.setItem("user", JSON.stringify(u));
-        setIsLoading(false);
-        setError(null);
-      })
-      .catch((error) => {
-        setError(error.toString());
-        setIsLoading(false);
-      });
+    try {
+      const u = await firebase
+        .auth()
+        .createUserWithEmailAndPassword(email, password);
+      setUser(u);
+      await AsyncStorage.setItem("user", JSON.stringify(u));
+      setIsLoading(false);
+      setError(null);
+    } catch (error) {
+      setError(error.toString());
+      setIsLoading(false);
+    }
+
+    // firebase
+    //   .auth()
+    //   .createUserWithEmailAndPassword(email, password)
+    //   .then((u) => {
+    //     setUser(u);
+    //     AsyncStorage.setItem("user", u);
+    //     setIsLoading(false);
+    //     setError(null);
+    //   })
+    //   .catch((error) => {
+    //     setError(error.toString());
+    //     setIsLoading(false);
+    //   });
   };
 
   const onLogout = async () => {
@@ -82,7 +107,7 @@ export const AuthenticationContextProvider = ({ children }) => {
         setUser(null);
       })
       .catch((error) => {
-        console.log(error);
+        console.log("error", error);
       });
   };
 

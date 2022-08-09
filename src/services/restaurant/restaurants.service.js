@@ -26,9 +26,9 @@ export const restaurantsTransform = ({ results = [] }) => {
   });
   return camelize(mappedResults);
 };
-restaurantsRequest()
-  .then(restaurantsTransform)
-  .then((transformedResult) => {})
-  .catch((error) => {
-    console.log("Error message: ", error);
-  });
+// restaurantsRequest()
+//   .then(restaurantsTransform)
+//   .then((transformedResult) => {})
+//   .catch((error) => {
+//     console.log("Error message: ", error);
+//   });

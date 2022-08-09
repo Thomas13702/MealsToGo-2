@@ -29,7 +29,7 @@ export const RestaurantsContextProvider = ({ children }) => {
           setIsLoading(false);
           setError(err);
         });
-    }, 2000); //adding in own latency to simulate network call
+    }, 0); //adding in own latency to simulate network call
   };
 
   useEffect(() => {
