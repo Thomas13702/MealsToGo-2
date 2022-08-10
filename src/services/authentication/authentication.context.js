@@ -21,13 +21,16 @@ export const AuthenticationContextProvider = ({ children }) => {
       if (user1) {
         setUser(JSON.parse(user1));
       } else {
-        firebase.auth().onAuthStateChanged((usr) => {
-          if (usr) {
-            setUser(usr);
-          } else {
-          }
-        });
+        setUser([]);
       }
+      // else {
+      //   firebase.auth().onAuthStateChanged((usr) => {
+      //     if (usr) {
+      //       setUser(usr);
+      //     } else {
+      //     }
+      //   });
+      // }
     };
     getUser();
   }, []);
