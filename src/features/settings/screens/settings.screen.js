@@ -7,6 +7,7 @@ import { Text } from "../../../components/typography/text.component";
 import { Spacer } from "../../../components/spacer/spacer.component";
 import { SafeArea } from "../../../components/utility/safe-area.component";
 import styled from "styled-components";
+import { TouchableOpacity } from "react-native";
 
 const SettingsItem = styled(List.Item)`
   padding: ${(props) => props.theme.space[3]};
@@ -22,12 +23,14 @@ export const SettingsScreen = ({ navigation }) => {
   return (
     <SafeArea>
       <List.Section>
-        <AvatarContainer>
-          <Avatar.Icon size={120} icon="human" backgroundColor="#2182BD" />
-          <Spacer position="top" size="large">
-            <Text variant="label">{user.user.email}</Text>
-          </Spacer>
-        </AvatarContainer>
+        <TouchableOpacity onPress={() => navigation.navigate("Camera")}>
+          <AvatarContainer>
+            <Avatar.Icon size={120} icon="human" backgroundColor="#2182BD" />
+            <Spacer position="top" size="large">
+              <Text variant="label">{user.user.email}</Text>
+            </Spacer>
+          </AvatarContainer>
+        </TouchableOpacity>
 
         <SettingsItem
           title="Favourites"
