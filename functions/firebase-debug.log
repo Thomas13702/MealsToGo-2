@@ -419,3 +419,1138 @@ Issues? Report them at https://github.com/firebase/firebase-tools/issues and att
 [debug] [2022-08-22T22:17:59.073Z] [worker-us-central1-geocode-3cf5d89d-4d21-4039-935d-d5404b662743]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-3cf5d89d-4d21-4039-935d-d5404b662743]: IDLE"}}
 [debug] [2022-08-22T22:17:59.073Z] [work-queue] {"queueLength":0,"workRunningCount":0}
 [debug] [2022-08-22T22:17:59.652Z] Functions emulator received unknown request at path /favicon.ico
+[debug] [2022-08-22T22:24:25.093Z] File C:\Users\thoma\Documents\App_Development\MealsToGo\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-08-22T22:24:26.106Z] Validating nodejs source
+[debug] [2022-08-22T22:24:27.987Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-22T22:24:27.987Z] Building nodejs source
+[debug] [2022-08-22T22:24:27.987Z] Analyzing nodejs backend spec
+[debug] [2022-08-22T22:24:27.988Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-22T22:24:28.151Z] Serving at port 9005
+
+[debug] [2022-08-22T22:24:28.202Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-22T22:24:28.206Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: geocode. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode."}}
+[debug] [2022-08-22T22:24:28.214Z] [worker-pool] Shutting down IDLE worker (us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-geocode)"}}
+[debug] [2022-08-22T22:24:28.214Z] [worker-us-central1-geocode-3cf5d89d-4d21-4039-935d-d5404b662743]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-3cf5d89d-4d21-4039-935d-d5404b662743]: FINISHING"}}
+[debug] [2022-08-22T22:24:28.219Z] [worker-us-central1-geocode-3cf5d89d-4d21-4039-935d-d5404b662743]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-3cf5d89d-4d21-4039-935d-d5404b662743]: exited"}}
+[debug] [2022-08-22T22:24:28.219Z] [worker-us-central1-geocode-3cf5d89d-4d21-4039-935d-d5404b662743]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-3cf5d89d-4d21-4039-935d-d5404b662743]: FINISHED"}}
+[debug] [2022-08-22T22:24:45.468Z] File C:\Users\thoma\Documents\App_Development\MealsToGo\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-08-22T22:24:46.473Z] Validating nodejs source
+[debug] [2022-08-22T22:24:48.323Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-22T22:24:48.324Z] Building nodejs source
+[debug] [2022-08-22T22:24:48.324Z] Analyzing nodejs backend spec
+[debug] [2022-08-22T22:24:48.324Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-22T22:24:48.483Z] Serving at port 9005
+
+[debug] [2022-08-22T22:24:48.534Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-22T22:24:48.537Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[info] +  functions[us-central1-placesNearby]: http function initialized (http://localhost:5001/mealstogo-c4b4c/us-central1/placesNearby). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/mealstogo-c4b4c/us-central1/placesNearby)."}}
+[debug] [2022-08-22T22:25:20.458Z] File C:\Users\thoma\Documents\App_Development\MealsToGo\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-08-22T22:25:21.467Z] Validating nodejs source
+[debug] [2022-08-22T22:25:23.506Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-22T22:25:23.507Z] Building nodejs source
+[debug] [2022-08-22T22:25:23.507Z] Analyzing nodejs backend spec
+[debug] [2022-08-22T22:25:23.507Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-22T22:25:23.658Z] Serving at port 9005
+
+[debug] [2022-08-22T22:25:23.708Z] Got response from /__/functions.yaml Failed to generate manifest from function source: Error: Cannot find module './places'
+Require stack:
+- C:\Users\thoma\Documents\App_Development\MealsToGo\functions\index.js
+- C:\Users\thoma\Documents\App_Development\MealsToGo\functions\node_modules\firebase-functions\lib\runtime\loader.js
+- C:\Users\thoma\Documents\App_Development\MealsToGo\functions\node_modules\firebase-functions\lib\bin\firebase-functions.js
+[debug] [2022-08-22T22:25:23.710Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 56:
+     ... fest from function source: Error: Cannot find module './places'
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: Error: Cannot find module './places'\nRequire stack:\n- C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\index.js\n- C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\runtime\\loader.js\n- C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\bin\\firebase-functions.js\n\u0000","position":55,"line":0,"column":55},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 56:\n     ... fest from function source: Error: Cannot find module './places'\n                                         ^"}
+[debug] [2022-08-22T22:25:23.713Z] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: Error: Cannot find module './places'
+Require stack:
+- C:\Users\thoma\Documents\App_Development\MealsToGo\functions\index.js
+- C:\Users\thoma\Documents\App_Development\MealsToGo\functions\node_modules\firebase-functions\lib\runtime\loader.js
+- C:\Users\thoma\Documents\App_Development\MealsToGo\functions\node_modules\firebase-functions\lib\bin\firebase-functions.js {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: Error: Cannot find module './places'\nRequire stack:\n- C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\index.js\n- C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\runtime\\loader.js\n- C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\bin\\firebase-functions.js"}}
+[debug] [2022-08-22T22:26:14.061Z] File C:\Users\thoma\Documents\App_Development\MealsToGo\functions\places\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\places\\index.js changed, reloading triggers"}}
+[debug] [2022-08-22T22:26:15.069Z] Validating nodejs source
+[debug] [2022-08-22T22:26:16.934Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-22T22:26:16.934Z] Building nodejs source
+[debug] [2022-08-22T22:26:16.934Z] Analyzing nodejs backend spec
+[debug] [2022-08-22T22:26:16.934Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-22T22:26:17.096Z] Serving at port 9005
+
+[debug] [2022-08-22T22:26:17.147Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-22T22:26:17.150Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2022-08-22T22:31:57.536Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-08-22T22:31:57.537Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-08-22T22:31:57.537Z] Accepted request GET /mealstogo-c4b4c/us-central1/geocode?city=antwerp --> us-central1-geocode
+[debug] [2022-08-22T22:31:57.537Z] [worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0"}}
+[debug] [2022-08-22T22:31:57.541Z] [worker-pool] addWorker(us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-geocode)"}}
+[debug] [2022-08-22T22:31:57.541Z] [worker-pool] Adding worker with key us-central1-geocode, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-geocode, total=1"}}
+[debug] [2022-08-22T22:31:57.541Z] [worker-pool] submitWork(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-geocode)"}}
+[debug] [2022-08-22T22:31:57.541Z] [worker-us-central1-geocode-bceb37b9-4164-4147-aa83-0120a9f63a39]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-bceb37b9-4164-4147-aa83-0120a9f63a39]: BUSY"}}
+[debug] [2022-08-22T22:31:58.426Z] [runtime-status] [11444] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [11444] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"C:\\\\Users\\\\thoma\\\\Documents\\\\App_Development\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-22T22:31:58.428Z] [runtime-status] [11444] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [11444] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\thoma\\\\Documents\\\\App_Development\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-22T22:31:58.428Z] [runtime-status] [11444] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [11444] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-08-22T22:31:58.429Z] [runtime-status] [11444] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [11444] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\thoma\\\\Documents\\\\App_Development\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-22T22:31:58.464Z] [runtime-status] [11444] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [11444] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-08-22T22:31:58.464Z] [runtime-status] [11444] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [11444] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\thoma\\\\Documents\\\\App_Development\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-08-22T22:31:58.465Z] [runtime-status] [11444] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [11444] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\thoma\\\\Documents\\\\App_Development\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-22T22:31:58.466Z] [runtime-status] [11444] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [11444] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"C:\\\\Users\\\\thoma\\\\Documents\\\\App_Development\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-22T22:31:58.466Z] [runtime-status] [11444] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [11444] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\thoma\\\\Documents\\\\App_Development\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-22T22:31:58.467Z] [runtime-status] [11444] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [11444] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"C:\\\\Users\\\\thoma\\\\Documents\\\\App_Development\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-08-22T22:31:58.467Z] [runtime-status] [11444] Functions runtime initialized. {"cwd":"C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions","node_version":"16.16.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [11444] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\thoma\\\\Documents\\\\App_Development\\\\MealsToGo\\\\functions\",\"node_version\":\"16.16.0\"}"}}
+[debug] [2022-08-22T22:31:58.469Z] [runtime-status] [11444] Beginning invocation function geocode! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [11444] Beginning invocation function geocode!"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-08-22T22:31:58.470Z] [runtime-status] [11444] Running geocode in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [11444] Running geocode in signature http"}}
+[debug] [2022-08-22T22:31:58.473Z] [runtime-status] [11444] Listening to port: \\?\pipe\fire_emu_a70dda415a4f2433 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [11444] Listening to port: \\\\?\\pipe\\fire_emu_a70dda415a4f2433"}}
+[debug] [2022-08-22T22:31:58.525Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-08-22T22:31:58.525Z] [functions] Got req.url=/mealstogo-c4b4c/us-central1/geocode?city=antwerp, mapping to path=/?city=antwerp {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-c4b4c/us-central1/geocode?city=antwerp, mapping to path=/?city=antwerp"}}
+[debug] [2022-08-22T22:31:58.527Z] [runtime-status] [11444] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [11444] Ephemeral server handling GET request"}}
+[debug] [2022-08-22T22:31:58.529Z] [runtime-status] [11444] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [11444] Ephemeral server survived."}}
+[info] i  functions: Finished "geocode" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in ~1s"}}
+[debug] [2022-08-22T22:31:58.529Z] [worker-us-central1-geocode-bceb37b9-4164-4147-aa83-0120a9f63a39]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-bceb37b9-4164-4147-aa83-0120a9f63a39]: IDLE"}}
+[debug] [2022-08-22T22:31:58.529Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-08-22T22:32:06.533Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-08-22T22:32:06.533Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-08-22T22:32:06.533Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-08-22T22:32:15.089Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-08-22T22:32:15.089Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-08-22T22:32:15.089Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-08-22T22:32:28.127Z] File C:\Users\thoma\Documents\App_Development\MealsToGo\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-08-22T22:32:29.134Z] Validating nodejs source
+[debug] [2022-08-22T22:32:31.017Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-22T22:32:31.017Z] Building nodejs source
+[debug] [2022-08-22T22:32:31.017Z] Analyzing nodejs backend spec
+[debug] [2022-08-22T22:32:31.018Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-22T22:32:31.168Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-08-22T22:32:31.168Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-08-22T22:32:31.169Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-08-22T22:32:31.170Z] Serving at port 9005
+
+[debug] [2022-08-22T22:32:31.220Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-22T22:32:31.222Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2022-08-22T22:32:31.231Z] [worker-pool] Shutting down IDLE worker (us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-geocode)"}}
+[debug] [2022-08-22T22:32:31.231Z] [worker-us-central1-geocode-bceb37b9-4164-4147-aa83-0120a9f63a39]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-bceb37b9-4164-4147-aa83-0120a9f63a39]: FINISHING"}}
+[debug] [2022-08-22T22:32:31.235Z] [worker-us-central1-geocode-bceb37b9-4164-4147-aa83-0120a9f63a39]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-bceb37b9-4164-4147-aa83-0120a9f63a39]: exited"}}
+[debug] [2022-08-22T22:32:31.236Z] [worker-us-central1-geocode-bceb37b9-4164-4147-aa83-0120a9f63a39]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-bceb37b9-4164-4147-aa83-0120a9f63a39]: FINISHED"}}
+[debug] [2022-08-22T22:32:54.946Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-08-22T22:32:54.946Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-08-22T22:32:54.946Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-08-22T22:33:06.950Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-08-22T22:33:06.950Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-08-22T22:33:06.950Z] Accepted request GET /mealstogo-c4b4c/us-central1/placesNearby --> us-central1-placesNearby
+[debug] [2022-08-22T22:33:06.950Z] [worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0"}}
+[debug] [2022-08-22T22:33:06.954Z] [worker-pool] addWorker(us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-placesNearby)"}}
+[debug] [2022-08-22T22:33:06.954Z] [worker-pool] Adding worker with key us-central1-placesNearby, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-placesNearby, total=1"}}
+[debug] [2022-08-22T22:33:06.954Z] [worker-pool] submitWork(triggerId=us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-placesNearby)"}}
+[debug] [2022-08-22T22:33:06.954Z] [worker-us-central1-placesNearby-95838c08-7d1c-4deb-ac15-5005072d61e3]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-95838c08-7d1c-4deb-ac15-5005072d61e3]: BUSY"}}
+[debug] [2022-08-22T22:33:07.831Z] [runtime-status] [3192] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [3192] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"C:\\\\Users\\\\thoma\\\\Documents\\\\App_Development\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-22T22:33:07.832Z] [runtime-status] [3192] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [3192] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\thoma\\\\Documents\\\\App_Development\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-22T22:33:07.833Z] [runtime-status] [3192] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [3192] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-08-22T22:33:07.833Z] [runtime-status] [3192] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [3192] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\thoma\\\\Documents\\\\App_Development\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-22T22:33:07.869Z] [runtime-status] [3192] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [3192] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-08-22T22:33:07.869Z] [runtime-status] [3192] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [3192] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\thoma\\\\Documents\\\\App_Development\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-08-22T22:33:07.870Z] [runtime-status] [3192] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [3192] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\thoma\\\\Documents\\\\App_Development\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-22T22:33:07.871Z] [runtime-status] [3192] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [3192] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"C:\\\\Users\\\\thoma\\\\Documents\\\\App_Development\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-22T22:33:07.871Z] [runtime-status] [3192] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [3192] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\thoma\\\\Documents\\\\App_Development\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-22T22:33:07.871Z] [runtime-status] [3192] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [3192] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"C:\\\\Users\\\\thoma\\\\Documents\\\\App_Development\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-08-22T22:33:07.871Z] [runtime-status] [3192] Functions runtime initialized. {"cwd":"C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions","node_version":"16.16.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [3192] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\thoma\\\\Documents\\\\App_Development\\\\MealsToGo\\\\functions\",\"node_version\":\"16.16.0\"}"}}
+[debug] [2022-08-22T22:33:07.874Z] [runtime-status] [3192] Beginning invocation function placesNearby! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [3192] Beginning invocation function placesNearby!"}}
+[info] i  functions: Beginning execution of "placesNearby" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Beginning execution of \"placesNearby\""}}
+[debug] [2022-08-22T22:33:07.875Z] [runtime-status] [3192] Running placesNearby in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [3192] Running placesNearby in signature http"}}
+[debug] [2022-08-22T22:33:07.878Z] [runtime-status] [3192] Listening to port: \\?\pipe\fire_emu_42663f23fb5518cc {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [3192] Listening to port: \\\\?\\pipe\\fire_emu_42663f23fb5518cc"}}
+[debug] [2022-08-22T22:33:07.946Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-08-22T22:33:07.946Z] [functions] Got req.url=/mealstogo-c4b4c/us-central1/placesNearby, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-c4b4c/us-central1/placesNearby, mapping to path=/"}}
+[debug] [2022-08-22T22:33:07.947Z] [runtime-status] [3192] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [3192] Ephemeral server handling GET request"}}
+[debug] [2022-08-22T22:33:07.949Z] [runtime-status] [3192] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [3192] Ephemeral server survived."}}
+[info] i  functions: Finished "placesNearby" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finished \"placesNearby\" in ~1s"}}
+[debug] [2022-08-22T22:33:07.950Z] [worker-us-central1-placesNearby-95838c08-7d1c-4deb-ac15-5005072d61e3]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-95838c08-7d1c-4deb-ac15-5005072d61e3]: IDLE"}}
+[debug] [2022-08-22T22:33:07.950Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-08-22T22:34:35.692Z] File C:\Users\thoma\Documents\App_Development\MealsToGo\functions\places\mock\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\places\\mock\\index.js changed, reloading triggers"}}
+[debug] [2022-08-22T22:34:36.700Z] Validating nodejs source
+[debug] [2022-08-22T22:34:38.574Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-22T22:34:38.574Z] Building nodejs source
+[debug] [2022-08-22T22:34:38.574Z] Analyzing nodejs backend spec
+[debug] [2022-08-22T22:34:38.574Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-22T22:34:38.731Z] Serving at port 9005
+
+[debug] [2022-08-22T22:34:38.781Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-22T22:34:38.784Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2022-08-22T22:34:38.792Z] [worker-pool] Shutting down IDLE worker (us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-placesNearby)"}}
+[debug] [2022-08-22T22:34:38.792Z] [worker-us-central1-placesNearby-95838c08-7d1c-4deb-ac15-5005072d61e3]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-95838c08-7d1c-4deb-ac15-5005072d61e3]: FINISHING"}}
+[debug] [2022-08-22T22:34:38.797Z] [worker-us-central1-placesNearby-95838c08-7d1c-4deb-ac15-5005072d61e3]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-95838c08-7d1c-4deb-ac15-5005072d61e3]: exited"}}
+[debug] [2022-08-22T22:34:38.797Z] [worker-us-central1-placesNearby-95838c08-7d1c-4deb-ac15-5005072d61e3]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-95838c08-7d1c-4deb-ac15-5005072d61e3]: FINISHED"}}
+[debug] [2022-08-22T22:35:35.136Z] File C:\Users\thoma\Documents\App_Development\MealsToGo\functions\places\mock\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\places\\mock\\index.js changed, reloading triggers"}}
+[debug] [2022-08-22T22:35:36.148Z] Validating nodejs source
+[debug] [2022-08-22T22:35:38.059Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-22T22:35:38.059Z] Building nodejs source
+[debug] [2022-08-22T22:35:38.059Z] Analyzing nodejs backend spec
+[debug] [2022-08-22T22:35:38.060Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-22T22:35:38.072Z] File C:\Users\thoma\Documents\App_Development\MealsToGo\functions\places\mock\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\places\\mock\\index.js changed, reloading triggers"}}
+[debug] [2022-08-22T22:35:38.224Z] Serving at port 9005
+
+[debug] [2022-08-22T22:35:38.276Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-22T22:35:38.279Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2022-08-22T22:35:39.081Z] Validating nodejs source
+[debug] [2022-08-22T22:35:40.935Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-22T22:35:40.935Z] Building nodejs source
+[debug] [2022-08-22T22:35:40.935Z] Analyzing nodejs backend spec
+[debug] [2022-08-22T22:35:40.935Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-22T22:35:41.091Z] Serving at port 9005
+
+[debug] [2022-08-22T22:35:41.143Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-22T22:35:41.146Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2022-08-22T22:35:48.076Z] File C:\Users\thoma\Documents\App_Development\MealsToGo\functions\places\mock\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\places\\mock\\index.js changed, reloading triggers"}}
+[debug] [2022-08-22T22:35:49.082Z] Validating nodejs source
+[debug] [2022-08-22T22:35:51.630Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-22T22:35:51.630Z] Building nodejs source
+[debug] [2022-08-22T22:35:51.630Z] Analyzing nodejs backend spec
+[debug] [2022-08-22T22:35:51.630Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-22T22:35:51.641Z] File C:\Users\thoma\Documents\App_Development\MealsToGo\functions\places\mock\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\places\\mock\\index.js changed, reloading triggers"}}
+[debug] [2022-08-22T22:35:51.784Z] Serving at port 9005
+
+[debug] [2022-08-22T22:35:51.833Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-22T22:35:51.836Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2022-08-22T22:35:52.657Z] Validating nodejs source
+[debug] [2022-08-22T22:35:54.508Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-22T22:35:54.508Z] Building nodejs source
+[debug] [2022-08-22T22:35:54.508Z] Analyzing nodejs backend spec
+[debug] [2022-08-22T22:35:54.508Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-22T22:35:54.666Z] Serving at port 9005
+
+[debug] [2022-08-22T22:35:54.717Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-22T22:35:54.720Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2022-08-22T22:36:22.610Z] File C:\Users\thoma\Documents\App_Development\MealsToGo\functions\places\mock\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\places\\mock\\index.js changed, reloading triggers"}}
+[debug] [2022-08-22T22:36:23.624Z] Validating nodejs source
+[debug] [2022-08-22T22:36:25.488Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-22T22:36:25.489Z] Building nodejs source
+[debug] [2022-08-22T22:36:25.489Z] Analyzing nodejs backend spec
+[debug] [2022-08-22T22:36:25.490Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-22T22:36:25.642Z] Serving at port 9005
+
+[debug] [2022-08-22T22:36:25.695Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-22T22:36:25.697Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2022-08-22T22:37:25.257Z] File C:\Users\thoma\Documents\App_Development\MealsToGo\functions\places\mock\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\places\\mock\\index.js changed, reloading triggers"}}
+[debug] [2022-08-22T22:37:26.268Z] Validating nodejs source
+[debug] [2022-08-22T22:37:28.178Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-22T22:37:28.178Z] Building nodejs source
+[debug] [2022-08-22T22:37:28.178Z] Analyzing nodejs backend spec
+[debug] [2022-08-22T22:37:28.179Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-22T22:37:28.337Z] Serving at port 9005
+
+[debug] [2022-08-22T22:37:28.387Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-22T22:37:28.390Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2022-08-22T22:37:37.635Z] File C:\Users\thoma\Documents\App_Development\MealsToGo\functions\places\mock\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\places\\mock\\index.js changed, reloading triggers"}}
+[debug] [2022-08-22T22:37:38.643Z] Validating nodejs source
+[debug] [2022-08-22T22:37:40.568Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-22T22:37:40.568Z] Building nodejs source
+[debug] [2022-08-22T22:37:40.568Z] Analyzing nodejs backend spec
+[debug] [2022-08-22T22:37:40.568Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-22T22:37:40.732Z] Serving at port 9005
+
+[debug] [2022-08-22T22:37:40.789Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-22T22:37:40.792Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2022-08-22T22:37:42.716Z] File C:\Users\thoma\Documents\App_Development\MealsToGo\functions\places\mock\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\places\\mock\\index.js changed, reloading triggers"}}
+[debug] [2022-08-22T22:37:43.729Z] Validating nodejs source
+[debug] [2022-08-22T22:37:45.656Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-22T22:37:45.656Z] Building nodejs source
+[debug] [2022-08-22T22:37:45.656Z] Analyzing nodejs backend spec
+[debug] [2022-08-22T22:37:45.657Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-22T22:37:45.818Z] Serving at port 9005
+
+[debug] [2022-08-22T22:37:45.870Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-22T22:37:45.873Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2022-08-22T22:38:19.185Z] File C:\Users\thoma\Documents\App_Development\MealsToGo\functions\places\mock\antwerp.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\places\\mock\\antwerp.js changed, reloading triggers"}}
+[debug] [2022-08-22T22:38:20.200Z] Validating nodejs source
+[debug] [2022-08-22T22:38:22.151Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-22T22:38:22.151Z] Building nodejs source
+[debug] [2022-08-22T22:38:22.151Z] Analyzing nodejs backend spec
+[debug] [2022-08-22T22:38:22.152Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-22T22:38:22.317Z] Serving at port 9005
+
+[debug] [2022-08-22T22:38:22.369Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-22T22:38:22.372Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2022-08-22T22:38:29.431Z] File C:\Users\thoma\Documents\App_Development\MealsToGo\functions\places\mock\antwerp.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\places\\mock\\antwerp.js changed, reloading triggers"}}
+[debug] [2022-08-22T22:38:30.444Z] Validating nodejs source
+[debug] [2022-08-22T22:38:32.346Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-22T22:38:32.346Z] Building nodejs source
+[debug] [2022-08-22T22:38:32.346Z] Analyzing nodejs backend spec
+[debug] [2022-08-22T22:38:32.347Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-22T22:38:32.503Z] Serving at port 9005
+
+[debug] [2022-08-22T22:38:32.554Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-22T22:38:32.557Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2022-08-22T22:38:41.708Z] File C:\Users\thoma\Documents\App_Development\MealsToGo\functions\places\mock\chicago.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\places\\mock\\chicago.js changed, reloading triggers"}}
+[debug] [2022-08-22T22:38:42.711Z] Validating nodejs source
+[debug] [2022-08-22T22:38:44.639Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-22T22:38:44.639Z] Building nodejs source
+[debug] [2022-08-22T22:38:44.639Z] Analyzing nodejs backend spec
+[debug] [2022-08-22T22:38:44.639Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-22T22:38:44.798Z] Serving at port 9005
+
+[debug] [2022-08-22T22:38:44.848Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-22T22:38:44.851Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2022-08-22T22:38:50.903Z] File C:\Users\thoma\Documents\App_Development\MealsToGo\functions\places\mock\san_francisco.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\places\\mock\\san_francisco.js changed, reloading triggers"}}
+[debug] [2022-08-22T22:38:51.906Z] Validating nodejs source
+[debug] [2022-08-22T22:38:53.830Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-22T22:38:53.830Z] Building nodejs source
+[debug] [2022-08-22T22:38:53.830Z] Analyzing nodejs backend spec
+[debug] [2022-08-22T22:38:53.831Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-22T22:38:54.001Z] Serving at port 9005
+
+[debug] [2022-08-22T22:38:54.056Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-22T22:38:54.059Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2022-08-22T22:39:03.660Z] File C:\Users\thoma\Documents\App_Development\MealsToGo\functions\places\mock\toronto.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\places\\mock\\toronto.js changed, reloading triggers"}}
+[debug] [2022-08-22T22:39:04.663Z] Validating nodejs source
+[debug] [2022-08-22T22:39:06.560Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-22T22:39:06.560Z] Building nodejs source
+[debug] [2022-08-22T22:39:06.560Z] Analyzing nodejs backend spec
+[debug] [2022-08-22T22:39:06.560Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-22T22:39:06.717Z] Serving at port 9005
+
+[debug] [2022-08-22T22:39:06.769Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-22T22:39:06.772Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2022-08-22T22:50:00.034Z] File C:\Users\thoma\Documents\App_Development\MealsToGo\functions\places\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\places\\index.js changed, reloading triggers"}}
+[debug] [2022-08-22T22:50:01.036Z] Validating nodejs source
+[debug] [2022-08-22T22:50:02.945Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-22T22:50:02.945Z] Building nodejs source
+[debug] [2022-08-22T22:50:02.945Z] Analyzing nodejs backend spec
+[debug] [2022-08-22T22:50:02.946Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-22T22:50:03.107Z] Serving at port 9005
+
+[debug] [2022-08-22T22:50:03.161Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-22T22:50:03.164Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2022-08-22T22:54:31.441Z] File C:\Users\thoma\Documents\App_Development\MealsToGo\functions\places\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\places\\index.js changed, reloading triggers"}}
+[debug] [2022-08-22T22:54:32.453Z] Validating nodejs source
+[debug] [2022-08-22T22:54:34.363Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-22T22:54:34.363Z] Building nodejs source
+[debug] [2022-08-22T22:54:34.363Z] Analyzing nodejs backend spec
+[debug] [2022-08-22T22:54:34.363Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-22T22:54:34.527Z] Serving at port 9005
+
+[debug] [2022-08-22T22:54:34.589Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-22T22:54:34.592Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2022-08-22T22:54:41.182Z] File C:\Users\thoma\Documents\App_Development\MealsToGo\functions\places\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\places\\index.js changed, reloading triggers"}}
+[debug] [2022-08-22T22:54:42.183Z] Validating nodejs source
+[debug] [2022-08-22T22:54:44.040Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-22T22:54:44.040Z] Building nodejs source
+[debug] [2022-08-22T22:54:44.040Z] Analyzing nodejs backend spec
+[debug] [2022-08-22T22:54:44.040Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-22T22:54:44.200Z] Serving at port 9005
+
+[debug] [2022-08-22T22:54:44.256Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-22T22:54:44.259Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2022-08-22T22:54:47.033Z] File C:\Users\thoma\Documents\App_Development\MealsToGo\functions\places\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\places\\index.js changed, reloading triggers"}}
+[debug] [2022-08-22T22:54:48.040Z] Validating nodejs source
+[debug] [2022-08-22T22:54:49.902Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-22T22:54:49.902Z] Building nodejs source
+[debug] [2022-08-22T22:54:49.902Z] Analyzing nodejs backend spec
+[debug] [2022-08-22T22:54:49.902Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-22T22:54:50.060Z] Serving at port 9005
+
+[debug] [2022-08-22T22:54:50.114Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-22T22:54:50.117Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2022-08-22T22:55:06.301Z] File C:\Users\thoma\Documents\App_Development\MealsToGo\functions\places\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\places\\index.js changed, reloading triggers"}}
+[debug] [2022-08-22T22:55:07.308Z] Validating nodejs source
+[debug] [2022-08-22T22:55:09.454Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-22T22:55:09.454Z] Building nodejs source
+[debug] [2022-08-22T22:55:09.454Z] Analyzing nodejs backend spec
+[debug] [2022-08-22T22:55:09.455Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-22T22:55:09.615Z] Serving at port 9005
+
+[debug] [2022-08-22T22:55:09.669Z] Got response from /__/functions.yaml Failed to generate manifest from function source: Error: Cannot find module './url'
+Require stack:
+- C:\Users\thoma\Documents\App_Development\MealsToGo\functions\places\index.js
+- C:\Users\thoma\Documents\App_Development\MealsToGo\functions\index.js
+- C:\Users\thoma\Documents\App_Development\MealsToGo\functions\node_modules\firebase-functions\lib\runtime\loader.js
+- C:\Users\thoma\Documents\App_Development\MealsToGo\functions\node_modules\firebase-functions\lib\bin\firebase-functions.js
+[debug] [2022-08-22T22:55:09.669Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 56:
+     ... fest from function source: Error: Cannot find module './url'
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: Error: Cannot find module './url'\nRequire stack:\n- C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\places\\index.js\n- C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\index.js\n- C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\runtime\\loader.js\n- C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\bin\\firebase-functions.js\n\u0000","position":55,"line":0,"column":55},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 56:\n     ... fest from function source: Error: Cannot find module './url'\n                                         ^"}
+[debug] [2022-08-22T22:55:09.672Z] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: Error: Cannot find module './url'
+Require stack:
+- C:\Users\thoma\Documents\App_Development\MealsToGo\functions\places\index.js
+- C:\Users\thoma\Documents\App_Development\MealsToGo\functions\index.js
+- C:\Users\thoma\Documents\App_Development\MealsToGo\functions\node_modules\firebase-functions\lib\runtime\loader.js
+- C:\Users\thoma\Documents\App_Development\MealsToGo\functions\node_modules\firebase-functions\lib\bin\firebase-functions.js {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: Error: Cannot find module './url'\nRequire stack:\n- C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\places\\index.js\n- C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\index.js\n- C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\runtime\\loader.js\n- C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\bin\\firebase-functions.js"}}
+[debug] [2022-08-22T22:55:10.815Z] File C:\Users\thoma\Documents\App_Development\MealsToGo\functions\places\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\places\\index.js changed, reloading triggers"}}
+[debug] [2022-08-22T22:55:11.827Z] Validating nodejs source
+[debug] [2022-08-22T22:55:13.916Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-22T22:55:13.917Z] Building nodejs source
+[debug] [2022-08-22T22:55:13.917Z] Analyzing nodejs backend spec
+[debug] [2022-08-22T22:55:13.917Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-22T22:55:14.087Z] Serving at port 9005
+
+[debug] [2022-08-22T22:55:14.146Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-22T22:55:14.153Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2022-08-22T22:55:18.797Z] File C:\Users\thoma\Documents\App_Development\MealsToGo\functions\places\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\places\\index.js changed, reloading triggers"}}
+[debug] [2022-08-22T22:55:19.809Z] Validating nodejs source
+[debug] [2022-08-22T22:55:21.698Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-22T22:55:21.699Z] Building nodejs source
+[debug] [2022-08-22T22:55:21.699Z] Analyzing nodejs backend spec
+[debug] [2022-08-22T22:55:21.699Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-22T22:55:21.854Z] Serving at port 9005
+
+[debug] [2022-08-22T22:55:21.908Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-22T22:55:21.911Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2022-08-22T22:56:28.714Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-08-22T22:56:28.714Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-08-22T22:56:28.714Z] Accepted request GET /mealstogo-c4b4c/us-central1/placesNearby?location=location --> us-central1-placesNearby
+[debug] [2022-08-22T22:56:28.714Z] [worker-pool] Cleaned up workers for us-central1-placesNearby: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-placesNearby: 1 --> 0"}}
+[debug] [2022-08-22T22:56:28.720Z] [worker-pool] addWorker(us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-placesNearby)"}}
+[debug] [2022-08-22T22:56:28.720Z] [worker-pool] Adding worker with key us-central1-placesNearby, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-placesNearby, total=1"}}
+[debug] [2022-08-22T22:56:28.720Z] [worker-pool] submitWork(triggerId=us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-placesNearby)"}}
+[debug] [2022-08-22T22:56:28.720Z] [worker-us-central1-placesNearby-29c44043-b0b3-407d-9e86-9677a8a1c183]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-29c44043-b0b3-407d-9e86-9677a8a1c183]: BUSY"}}
+[debug] [2022-08-22T22:56:29.618Z] [runtime-status] [4640] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [4640] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"C:\\\\Users\\\\thoma\\\\Documents\\\\App_Development\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-22T22:56:29.620Z] [runtime-status] [4640] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [4640] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\thoma\\\\Documents\\\\App_Development\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-22T22:56:29.621Z] [runtime-status] [4640] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [4640] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-08-22T22:56:29.622Z] [runtime-status] [4640] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [4640] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\thoma\\\\Documents\\\\App_Development\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-22T22:56:29.659Z] [runtime-status] [4640] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [4640] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-08-22T22:56:29.659Z] [runtime-status] [4640] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [4640] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\thoma\\\\Documents\\\\App_Development\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-08-22T22:56:29.659Z] [runtime-status] [4640] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [4640] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\thoma\\\\Documents\\\\App_Development\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-22T22:56:29.660Z] [runtime-status] [4640] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [4640] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"C:\\\\Users\\\\thoma\\\\Documents\\\\App_Development\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-22T22:56:29.661Z] [runtime-status] [4640] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [4640] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\thoma\\\\Documents\\\\App_Development\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-22T22:56:29.661Z] [runtime-status] [4640] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [4640] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"C:\\\\Users\\\\thoma\\\\Documents\\\\App_Development\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-08-22T22:56:29.661Z] [runtime-status] [4640] Functions runtime initialized. {"cwd":"C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions","node_version":"16.16.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [4640] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\thoma\\\\Documents\\\\App_Development\\\\MealsToGo\\\\functions\",\"node_version\":\"16.16.0\"}"}}
+[debug] [2022-08-22T22:56:29.667Z] [runtime-status] [4640] Beginning invocation function placesNearby! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [4640] Beginning invocation function placesNearby!"}}
+[info] i  functions: Beginning execution of "placesNearby" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Beginning execution of \"placesNearby\""}}
+[debug] [2022-08-22T22:56:29.668Z] [runtime-status] [4640] Running placesNearby in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [4640] Running placesNearby in signature http"}}
+[debug] [2022-08-22T22:56:29.672Z] [runtime-status] [4640] Listening to port: \\?\pipe\fire_emu_5c9f0e4db19e325e {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [4640] Listening to port: \\\\?\\pipe\\fire_emu_5c9f0e4db19e325e"}}
+[debug] [2022-08-22T22:56:29.708Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-08-22T22:56:29.708Z] [functions] Got req.url=/mealstogo-c4b4c/us-central1/placesNearby?location=location, mapping to path=/?location=location {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-c4b4c/us-central1/placesNearby?location=location, mapping to path=/?location=location"}}
+[debug] [2022-08-22T22:56:29.710Z] [runtime-status] [4640] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [4640] Ephemeral server handling GET request"}}
+[debug] [2022-08-22T22:56:29.712Z] [runtime-status] [4640] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [4640] Ephemeral server survived."}}
+[info] i  functions: Finished "placesNearby" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finished \"placesNearby\" in ~1s"}}
+[debug] [2022-08-22T22:56:29.712Z] [worker-us-central1-placesNearby-29c44043-b0b3-407d-9e86-9677a8a1c183]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-29c44043-b0b3-407d-9e86-9677a8a1c183]: IDLE"}}
+[debug] [2022-08-22T22:56:29.713Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-08-22T22:56:41.626Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-08-22T22:56:41.626Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-08-22T22:56:41.626Z] Accepted request GET /mealstogo-c4b4c/us-central1/placesNearby?location=someLocation --> us-central1-placesNearby
+[debug] [2022-08-22T22:56:41.627Z] [worker-pool] submitWork(triggerId=us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-placesNearby)"}}
+[debug] [2022-08-22T22:56:41.627Z] [worker-us-central1-placesNearby-29c44043-b0b3-407d-9e86-9677a8a1c183]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-29c44043-b0b3-407d-9e86-9677a8a1c183]: BUSY"}}
+[debug] [2022-08-22T22:56:41.627Z] [runtime-status] [4640] Beginning invocation function placesNearby! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [4640] Beginning invocation function placesNearby!"}}
+[info] i  functions: Beginning execution of "placesNearby" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Beginning execution of \"placesNearby\""}}
+[debug] [2022-08-22T22:56:41.627Z] [runtime-status] [4640] Running placesNearby in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [4640] Running placesNearby in signature http"}}
+[debug] [2022-08-22T22:56:41.628Z] [runtime-status] [4640] Listening to port: \\?\pipe\fire_emu_5c9f0e4db19e325e {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [4640] Listening to port: \\\\?\\pipe\\fire_emu_5c9f0e4db19e325e"}}
+[debug] [2022-08-22T22:56:41.735Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-08-22T22:56:41.735Z] [functions] Got req.url=/mealstogo-c4b4c/us-central1/placesNearby?location=someLocation, mapping to path=/?location=someLocation {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-c4b4c/us-central1/placesNearby?location=someLocation, mapping to path=/?location=someLocation"}}
+[debug] [2022-08-22T22:56:41.736Z] [runtime-status] [4640] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [4640] Ephemeral server handling GET request"}}
+[debug] [2022-08-22T22:56:41.736Z] [runtime-status] [4640] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [4640] Ephemeral server survived."}}
+[info] i  functions: Finished "placesNearby" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finished \"placesNearby\" in ~1s"}}
+[debug] [2022-08-22T22:56:41.737Z] [worker-us-central1-placesNearby-29c44043-b0b3-407d-9e86-9677a8a1c183]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-29c44043-b0b3-407d-9e86-9677a8a1c183]: IDLE"}}
+[debug] [2022-08-22T22:56:41.737Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-08-22T22:57:04.733Z] File C:\Users\thoma\Documents\App_Development\MealsToGo\functions\places\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\places\\index.js changed, reloading triggers"}}
+[debug] [2022-08-22T22:57:05.746Z] Validating nodejs source
+[debug] [2022-08-22T22:57:07.632Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-22T22:57:07.633Z] Building nodejs source
+[debug] [2022-08-22T22:57:07.633Z] Analyzing nodejs backend spec
+[debug] [2022-08-22T22:57:07.633Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-22T22:57:07.798Z] Serving at port 9005
+
+[debug] [2022-08-22T22:57:07.855Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-22T22:57:07.858Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2022-08-22T22:57:07.866Z] [worker-pool] Shutting down IDLE worker (us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-placesNearby)"}}
+[debug] [2022-08-22T22:57:07.866Z] [worker-us-central1-placesNearby-29c44043-b0b3-407d-9e86-9677a8a1c183]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-29c44043-b0b3-407d-9e86-9677a8a1c183]: FINISHING"}}
+[debug] [2022-08-22T22:57:07.872Z] [worker-us-central1-placesNearby-29c44043-b0b3-407d-9e86-9677a8a1c183]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-29c44043-b0b3-407d-9e86-9677a8a1c183]: exited"}}
+[debug] [2022-08-22T22:57:07.872Z] [worker-us-central1-placesNearby-29c44043-b0b3-407d-9e86-9677a8a1c183]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-29c44043-b0b3-407d-9e86-9677a8a1c183]: FINISHED"}}
+[debug] [2022-08-22T22:57:39.761Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-08-22T22:57:39.761Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-08-22T22:57:39.762Z] Accepted request GET /mealstogo-c4b4c/us-central1/placesNearby?location=51.219448,4.402464 --> us-central1-placesNearby
+[debug] [2022-08-22T22:57:39.762Z] [worker-pool] Cleaned up workers for us-central1-placesNearby: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-placesNearby: 1 --> 0"}}
+[debug] [2022-08-22T22:57:39.766Z] [worker-pool] addWorker(us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-placesNearby)"}}
+[debug] [2022-08-22T22:57:39.766Z] [worker-pool] Adding worker with key us-central1-placesNearby, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-placesNearby, total=1"}}
+[debug] [2022-08-22T22:57:39.766Z] [worker-pool] submitWork(triggerId=us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-placesNearby)"}}
+[debug] [2022-08-22T22:57:39.766Z] [worker-us-central1-placesNearby-42457092-0806-449a-9ebc-cbd04637cab2]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-42457092-0806-449a-9ebc-cbd04637cab2]: BUSY"}}
+[debug] [2022-08-22T22:57:40.677Z] [runtime-status] [22060] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [22060] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"C:\\\\Users\\\\thoma\\\\Documents\\\\App_Development\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-22T22:57:40.679Z] [runtime-status] [22060] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [22060] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\thoma\\\\Documents\\\\App_Development\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-22T22:57:40.679Z] [runtime-status] [22060] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [22060] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-08-22T22:57:40.680Z] [runtime-status] [22060] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [22060] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\thoma\\\\Documents\\\\App_Development\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-22T22:57:40.716Z] [runtime-status] [22060] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [22060] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-08-22T22:57:40.717Z] [runtime-status] [22060] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [22060] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\thoma\\\\Documents\\\\App_Development\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-08-22T22:57:40.717Z] [runtime-status] [22060] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [22060] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\thoma\\\\Documents\\\\App_Development\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-22T22:57:40.718Z] [runtime-status] [22060] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [22060] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"C:\\\\Users\\\\thoma\\\\Documents\\\\App_Development\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-22T22:57:40.719Z] [runtime-status] [22060] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [22060] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\thoma\\\\Documents\\\\App_Development\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-22T22:57:40.719Z] [runtime-status] [22060] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [22060] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"C:\\\\Users\\\\thoma\\\\Documents\\\\App_Development\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-08-22T22:57:40.719Z] [runtime-status] [22060] Functions runtime initialized. {"cwd":"C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions","node_version":"16.16.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [22060] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\thoma\\\\Documents\\\\App_Development\\\\MealsToGo\\\\functions\",\"node_version\":\"16.16.0\"}"}}
+[debug] [2022-08-22T22:57:40.725Z] [runtime-status] [22060] Beginning invocation function placesNearby! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [22060] Beginning invocation function placesNearby!"}}
+[info] i  functions: Beginning execution of "placesNearby" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Beginning execution of \"placesNearby\""}}
+[debug] [2022-08-22T22:57:40.726Z] [runtime-status] [22060] Running placesNearby in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [22060] Running placesNearby in signature http"}}
+[debug] [2022-08-22T22:57:40.729Z] [runtime-status] [22060] Listening to port: \\?\pipe\fire_emu_02f7d32f56a3733e {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [22060] Listening to port: \\\\?\\pipe\\fire_emu_02f7d32f56a3733e"}}
+[debug] [2022-08-22T22:57:40.762Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-08-22T22:57:40.762Z] [functions] Got req.url=/mealstogo-c4b4c/us-central1/placesNearby?location=51.219448,4.402464, mapping to path=/?location=51.219448,4.402464 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-c4b4c/us-central1/placesNearby?location=51.219448,4.402464, mapping to path=/?location=51.219448,4.402464"}}
+[debug] [2022-08-22T22:57:40.763Z] [runtime-status] [22060] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [22060] Ephemeral server handling GET request"}}
+[debug] [2022-08-22T22:57:40.765Z] [runtime-status] [22060] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [22060] Ephemeral server survived."}}
+[info] i  functions: Finished "placesNearby" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finished \"placesNearby\" in ~1s"}}
+[debug] [2022-08-22T22:57:40.766Z] [worker-us-central1-placesNearby-42457092-0806-449a-9ebc-cbd04637cab2]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-42457092-0806-449a-9ebc-cbd04637cab2]: IDLE"}}
+[debug] [2022-08-22T22:57:40.766Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-08-22T23:01:37.798Z] File C:\Users\thoma\Documents\App_Development\MealsToGo\functions\places\mock\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\places\\mock\\index.js changed, reloading triggers"}}
+[debug] [2022-08-22T23:01:38.801Z] Validating nodejs source
+[debug] [2022-08-22T23:01:40.889Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-22T23:01:40.889Z] Building nodejs source
+[debug] [2022-08-22T23:01:40.889Z] Analyzing nodejs backend spec
+[debug] [2022-08-22T23:01:40.889Z] Could not find functions.yaml. Must use http discovery
