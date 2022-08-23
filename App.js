@@ -39,23 +39,6 @@ import {
 import { useFonts as useLato, Lato_400Regular } from "@expo-google-fonts/lato";
 
 export default function App() {
-  // const [isAuthenticated, setIsAuthenticated] = useState(false);
-
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     firebase
-  //       .auth()
-  //       .signInWithEmailAndPassword("email@email.com", "test12")
-  //       .then((user) => {
-  //         console.log(user);
-  //         setIsAuthenticated(true);
-  //       })
-  //       .catch((error) => {
-  //         console.log(error);
-  //       });
-  //   }, 2000);
-  // }, []);
-
   const [OswaldLoaded] = useOswald({
     Oswald_400Regular,
   });
@@ -67,10 +50,6 @@ export default function App() {
   if (!OswaldLoaded || !LatoLoaded) {
     return null;
   }
-
-  // if (!isAuthenticated) {
-  //   return null;
-  // }
 
   return (
     <>
