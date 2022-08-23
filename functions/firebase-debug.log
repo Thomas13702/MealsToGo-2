@@ -1,0 +1,124 @@
+[debug] [2022-08-23T21:30:52.287Z] ----------------------------------------------------------------------
+[debug] [2022-08-23T21:30:52.288Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\thoma\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2022-08-23T21:30:52.288Z] CLI Version:   11.6.0
+[debug] [2022-08-23T21:30:52.289Z] Platform:      win32
+[debug] [2022-08-23T21:30:52.289Z] Node Version:  v16.16.0
+[debug] [2022-08-23T21:30:52.289Z] Time:          Tue Aug 23 2022 22:30:52 GMT+0100 (British Summer Time)
+[debug] [2022-08-23T21:30:52.289Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-08-23T21:30:52.344Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-08-23T21:30:52.345Z] > authorizing via signed-in user (thomaspritchard137@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2022-08-23T21:30:52.357Z] [hub] writing locator at C:\Users\thoma\AppData\Local\Temp\hub-mealstogo-c4b4c.json
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage, eventarc {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage, eventarc\u001b[22m"}}
+[info] +  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2022-08-23T21:30:52.392Z] defaultcredentials: writing to file C:\Users\thoma\AppData\Roaming\firebase\thomaspritchard137_gmail_com_application_default_credentials.json
+[debug] [2022-08-23T21:30:52.398Z] Setting GAC to C:\Users\thoma\AppData\Roaming\firebase\thomaspritchard137_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\thoma\\AppData\\Roaming\\firebase\\thomaspritchard137_gmail_com_application_default_credentials.json"}}
+[debug] [2022-08-23T21:30:52.399Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mealstogo-c4b4c/adminSdkConfig [none]
+[debug] [2022-08-23T21:30:52.745Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mealstogo-c4b4c/adminSdkConfig 200
+[debug] [2022-08-23T21:30:52.745Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mealstogo-c4b4c/adminSdkConfig {"projectId":"mealstogo-c4b4c","storageBucket":"mealstogo-c4b4c.appspot.com"}
+[debug] [2022-08-23T21:30:52.764Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-08-23T21:30:52.764Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-08-23T21:30:52.764Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\thoma\\.cache\\firebase\\emulators\\ui-v1.9.0\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\thoma\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.9.0\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-08-23T21:30:52.864Z] Web / API server started at localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4000\n"}}
+[info] i  functions: Watching "C:\Users\thoma\Documents\App_Development\MealsToGo\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\" for Cloud Functions..."}}
+[debug] [2022-08-23T21:30:53.034Z] Validating nodejs source
+[debug] [2022-08-23T21:30:55.021Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@googlemaps/google-maps-services-js": "^3.3.16",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-23T21:30:55.021Z] Building nodejs source
+[debug] [2022-08-23T21:30:55.022Z] Analyzing nodejs backend spec
+[debug] [2022-08-23T21:30:55.023Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-23T21:30:55.183Z] Serving at port 9005
+
+[debug] [2022-08-23T21:30:55.299Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-23T21:30:55.303Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[info] +  functions[us-central1-geocode]: http function initialized (http://localhost:5001/mealstogo-c4b4c/us-central1/geocode). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/mealstogo-c4b4c/us-central1/geocode)."}}
+[info] +  functions[us-central1-placesNearby]: http function initialized (http://localhost:5001/mealstogo-c4b4c/us-central1/placesNearby). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/mealstogo-c4b4c/us-central1/placesNearby)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4000                │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ localhost:5001 │ http://localhost:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2022-08-23T21:31:00.704Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-08-23T21:31:00.705Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-08-23T21:31:00.705Z] Accepted request GET /mealstogo-c4b4c/us-central1/geocode?city=antwerp&mock=false --> us-central1-geocode
+[debug] [2022-08-23T21:31:00.712Z] [worker-pool] addWorker(us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-geocode)"}}
+[debug] [2022-08-23T21:31:00.712Z] [worker-pool] Adding worker with key us-central1-geocode, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-geocode, total=1"}}
+[debug] [2022-08-23T21:31:00.712Z] [worker-pool] submitWork(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-geocode)"}}
+[debug] [2022-08-23T21:31:00.712Z] [worker-us-central1-geocode-8c8fd814-2e43-4a27-94f7-7db6ca4f5f1e]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-8c8fd814-2e43-4a27-94f7-7db6ca4f5f1e]: BUSY"}}
+[debug] [2022-08-23T21:31:01.591Z] [runtime-status] [22112] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22112] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"C:\\\\Users\\\\thoma\\\\Documents\\\\App_Development\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-23T21:31:01.592Z] [runtime-status] [22112] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22112] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\thoma\\\\Documents\\\\App_Development\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-23T21:31:01.593Z] [runtime-status] [22112] Found local functions config: C:\Users\thoma\Documents\App_Development\MealsToGo\functions/.runtimeconfig.json {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22112] Found local functions config: C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions/.runtimeconfig.json"}}
+[debug] [2022-08-23T21:31:01.593Z] [runtime-status] [22112] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22112] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-08-23T21:31:01.593Z] [runtime-status] [22112] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22112] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\thoma\\\\Documents\\\\App_Development\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-23T21:31:01.629Z] [runtime-status] [22112] Checked functions.config() {"config":{"google":{"key":"AIzaSyB6jfjYr5u8hHAunIKoKfe-gvDVlDF8VhQ"}}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22112] Checked functions.config() {\"config\":{\"google\":{\"key\":\"AIzaSyB6jfjYr5u8hHAunIKoKfe-gvDVlDF8VhQ\"}}}"}}
+[debug] [2022-08-23T21:31:01.629Z] [runtime-status] [22112] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22112] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\thoma\\\\Documents\\\\App_Development\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-08-23T21:31:01.630Z] [runtime-status] [22112] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22112] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\thoma\\\\Documents\\\\App_Development\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-23T21:31:01.631Z] [runtime-status] [22112] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22112] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"C:\\\\Users\\\\thoma\\\\Documents\\\\App_Development\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-23T21:31:01.632Z] [runtime-status] [22112] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22112] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\thoma\\\\Documents\\\\App_Development\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-23T21:31:01.632Z] [runtime-status] [22112] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22112] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"C:\\\\Users\\\\thoma\\\\Documents\\\\App_Development\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-08-23T21:31:01.632Z] [runtime-status] [22112] Functions runtime initialized. {"cwd":"C:\\Users\\thoma\\Documents\\App_Development\\MealsToGo\\functions","node_version":"16.16.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22112] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\thoma\\\\Documents\\\\App_Development\\\\MealsToGo\\\\functions\",\"node_version\":\"16.16.0\"}"}}
+[debug] [2022-08-23T21:31:01.696Z] [runtime-status] [22112] Beginning invocation function geocode! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22112] Beginning invocation function geocode!"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-08-23T21:31:01.697Z] [runtime-status] [22112] Running geocode in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22112] Running geocode in signature http"}}
+[debug] [2022-08-23T21:31:01.700Z] [runtime-status] [22112] Listening to port: \\?\pipe\fire_emu_94c0ba6306573bee {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22112] Listening to port: \\\\?\\pipe\\fire_emu_94c0ba6306573bee"}}
+[debug] [2022-08-23T21:31:01.809Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-08-23T21:31:01.809Z] [functions] Got req.url=/mealstogo-c4b4c/us-central1/geocode?city=antwerp&mock=false, mapping to path=/?city=antwerp&mock=false {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-c4b4c/us-central1/geocode?city=antwerp&mock=false, mapping to path=/?city=antwerp&mock=false"}}
+[debug] [2022-08-23T21:31:01.811Z] [runtime-status] [22112] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22112] Ephemeral server handling GET request"}}
+[debug] [2022-08-23T21:31:01.822Z] [runtime-status] [22112] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22112] Ephemeral server survived."}}
+[info] i  functions: Finished "geocode" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in ~1s"}}
+[debug] [2022-08-23T21:31:01.968Z] [worker-us-central1-geocode-8c8fd814-2e43-4a27-94f7-7db6ca4f5f1e]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-8c8fd814-2e43-4a27-94f7-7db6ca4f5f1e]: IDLE"}}
+[debug] [2022-08-23T21:31:01.968Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-08-23T21:31:23.482Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-08-23T21:31:23.482Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-08-23T21:31:23.482Z] Accepted request GET /mealstogo-c4b4c/us-central1/geocode?city=london&mock=false --> us-central1-geocode
+[debug] [2022-08-23T21:31:23.482Z] [worker-pool] submitWork(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-geocode)"}}
+[debug] [2022-08-23T21:31:23.482Z] [worker-us-central1-geocode-8c8fd814-2e43-4a27-94f7-7db6ca4f5f1e]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-8c8fd814-2e43-4a27-94f7-7db6ca4f5f1e]: BUSY"}}
+[debug] [2022-08-23T21:31:23.483Z] [runtime-status] [22112] Beginning invocation function geocode! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22112] Beginning invocation function geocode!"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-08-23T21:31:23.484Z] [runtime-status] [22112] Running geocode in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22112] Running geocode in signature http"}}
+[debug] [2022-08-23T21:31:23.484Z] [runtime-status] [22112] Listening to port: \\?\pipe\fire_emu_94c0ba6306573bee {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22112] Listening to port: \\\\?\\pipe\\fire_emu_94c0ba6306573bee"}}
+[debug] [2022-08-23T21:31:23.593Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-08-23T21:31:23.593Z] [functions] Got req.url=/mealstogo-c4b4c/us-central1/geocode?city=london&mock=false, mapping to path=/?city=london&mock=false {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-c4b4c/us-central1/geocode?city=london&mock=false, mapping to path=/?city=london&mock=false"}}
+[debug] [2022-08-23T21:31:23.594Z] [runtime-status] [22112] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22112] Ephemeral server handling GET request"}}
+[debug] [2022-08-23T21:31:23.596Z] [runtime-status] [22112] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22112] Ephemeral server survived."}}
+[info] i  functions: Finished "geocode" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in ~1s"}}
+[debug] [2022-08-23T21:31:23.717Z] [worker-us-central1-geocode-8c8fd814-2e43-4a27-94f7-7db6ca4f5f1e]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-8c8fd814-2e43-4a27-94f7-7db6ca4f5f1e]: IDLE"}}
+[debug] [2022-08-23T21:31:23.717Z] [work-queue] {"queueLength":0,"workRunningCount":0}
