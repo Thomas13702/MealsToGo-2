@@ -68,7 +68,7 @@ const RestaurantMap = ({ navigation }) => {
 
 export const MapScreen = ({ navigation }) => {
   const { location } = useContext(LocationContext);
-  console.log(location);
+  // console.log(location);
   if (!location) {
     return (
       <Map
