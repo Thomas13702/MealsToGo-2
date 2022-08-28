@@ -11,8 +11,10 @@ export const CartContextProvider = ({ children }) => {
 
   const add = (item, rst) => {
     if (!restaurant || restaurant.placeId !== rst.placeId) {
+      console.log(restaurant);
       setRestaurant(rst);
       setCart([item]);
+      return;
     }
     setCart([...cart, item]);
   };
@@ -24,7 +26,7 @@ export const CartContextProvider = ({ children }) => {
 
   return (
     <CartContext.Provider
-      values={{ addToCart: add, removeFromCart: clear, restaurant, cart }}
+      value={{ addToCart: add, removeFromCart: clear, restaurant, cart }}
     >
       {children}
     </CartContext.Provider>
