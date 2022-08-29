@@ -24,7 +24,7 @@ export const CreditCardInput = ({ nam = "Tom" }) => {
 
   return (
     <LiteCreditCardInput
-      autoFocus={true}
+      // autoFocus={true}
       inputStyle={{
         color: "black",
         fontSize: 16,
