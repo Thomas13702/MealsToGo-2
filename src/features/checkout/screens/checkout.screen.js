@@ -22,15 +22,17 @@ import { payRequest } from "../../../services/checkout/checkout.service";
 export const CheckoutScreen = () => {
   const { cart, restaurant, sum, removeFromCart } = useContext(CartContext);
   const [name, setName] = useState("");
+  const [card, setCard] = useState("");
   const [keyboardShow, setKeyboardShow] = useState();
 
   const onPay = () => {
-    payRequest("", 1299, "Tom");
-  };
+    if (!card || !card.id) {
+      console.log("error");
+      return;
+    }
 
-  useEffect(() => {
-    onPay();
-  }, []);
+    payRequest(card.id, sum, name);
+  };
 
   useEffect(() => {
     const keyboardDidShowListener = Keyboard.addListener(
@@ -91,16 +93,14 @@ export const CheckoutScreen = () => {
           }}
         />
         <Spacer position="left" size="medium">
-          {name.length > 0 && <CreditCardInput name={name} />}
+          {name.length > 0 && (
+            <CreditCardInput name={name} onSuccess={setCard} />
+          )}
         </Spacer>
 
         <Spacer position="top" size="xxl" />
 
-        <PayButton
-          icon="cash"
-          mode="contained"
-          onPress={() => console.log("success")}
-        >
+        <PayButton icon="cash" mode="contained" onPress={onPay}>
           Pay
         </PayButton>
 

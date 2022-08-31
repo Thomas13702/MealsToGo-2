@@ -16,6 +16,7 @@ export const payRequest = (token, amount, name) => {
     method: "POST",
   }).then((res) => {
     if (res.status > 200) {
+      console.log(JSON.stringify(res));
       return Promise.reject("Something Went Wrong with the Payment");
     }
     return res.json();

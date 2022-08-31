@@ -7,7 +7,7 @@ module.exports.payRequest = (request, response, stripe) => {
   //     source: token,
   //   });
   //   response.send(charge);
-  const body = JSON.parse(response.body);
-  console.log(body);
+  const body = JSON.parse(request.body);
+  console.log(body.token, body.amount, body.name);
   response.send("success");
 };
