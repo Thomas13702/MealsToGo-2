@@ -17,11 +17,20 @@ import {
   ClearButton,
 } from "../components/checkout.styles";
 import { RestaurantInfoCard } from "../../restaurants/components/restaurant-info-card.component";
+import { payRequest } from "../../../services/checkout/checkout.service";
 
 export const CheckoutScreen = () => {
   const { cart, restaurant, sum, removeFromCart } = useContext(CartContext);
   const [name, setName] = useState("");
   const [keyboardShow, setKeyboardShow] = useState();
+
+  const onPay = () => {
+    payRequest("", 1299, "Tom");
+  };
+
+  useEffect(() => {
+    onPay();
+  }, []);
 
   useEffect(() => {
     const keyboardDidShowListener = Keyboard.addListener(

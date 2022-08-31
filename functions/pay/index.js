@@ -7,5 +7,7 @@ module.exports.payRequest = (request, response, stripe) => {
   //     source: token,
   //   });
   //   response.send(charge);
-  response.send("Hello from Firebase!");
+  const body = JSON.parse(response.body);
+  console.log(body);
+  response.send("success");
 };
