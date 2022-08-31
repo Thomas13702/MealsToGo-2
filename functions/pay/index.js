@@ -1,13 +1,26 @@
-module.exports.payRequest = (request, response, stripe) => {
-  //   const { token, amount } = request.body;
-  //   const charge = stripe.charges.create({
-  //     amount,
-  //     currency: "usd",
-  //     description: "Example charge",
-  //     source: token,
-  //   });
-  //   response.send(charge);
+module.exports.payRequest = (request, response, stripeClient) => {
   const body = JSON.parse(request.body);
-  console.log(body.token, body.amount, body.name);
-  response.send("success");
+  const { token, amount } = body;
+
+  stripeClient.paymentIntents
+    .create({
+      amount,
+      currency: "usd",
+      payment_method_types: ["card"],
+      payment_method_data: {
+        type: "card",
+        card: {
+          token,
+        },
+      },
+      confirm: true,
+    })
+    .then((paymentIntent) => {
+      response.json(paymentIntent);
+    })
+    .catch((error) => {
+      console.log(error);
+      response.status(400);
+      response.send("Something went wrong");
+    });
 };

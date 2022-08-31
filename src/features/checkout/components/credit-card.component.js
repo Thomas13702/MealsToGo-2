@@ -15,7 +15,7 @@ export const CreditCardInput = ({ name, onSuccess }) => {
       exp_month: expiry[0],
       exp_year: expiry[1],
       cvc: values.cvc,
-      name: "Mo",
+      name,
     };
 
     if (!isIncomplete) {
