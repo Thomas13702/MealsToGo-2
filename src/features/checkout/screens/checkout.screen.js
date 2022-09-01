@@ -15,6 +15,7 @@ import {
   NameInput,
   PayButton,
   ClearButton,
+  PaymentProcessing,
 } from "../components/checkout.styles";
 import { RestaurantInfoCard } from "../../restaurants/components/restaurant-info-card.component";
 import { payRequest } from "../../../services/checkout/checkout.service";
@@ -23,15 +24,25 @@ export const CheckoutScreen = () => {
   const { cart, restaurant, sum, removeFromCart } = useContext(CartContext);
   const [name, setName] = useState("");
   const [card, setCard] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+
   const [keyboardShow, setKeyboardShow] = useState();
 
   const onPay = () => {
+    setIsLoading(true);
     if (!card || !card.id) {
+      setIsLoading(false);
       console.log("error");
       return;
     }
 
-    payRequest(card.id, sum, name);
+    payRequest(card.id, sum, name)
+      .then((result) => {
+        setIsLoading(false);
+      })
+      .catch((err) => {
+        setIsLoading(false);
+      });
   };
 
   useEffect(() => {
@@ -68,6 +79,7 @@ export const CheckoutScreen = () => {
     <SafeArea>
       {/* {!keyboardShow && <RestaurantInfoCard restaurant={restaurant} />} */}
       <RestaurantInfoCard restaurant={restaurant} />
+      {isLoading && <PaymentProcessing />}
       <ScrollView>
         <Spacer position="left" size="medium">
           <Spacer position="top" size="large">
@@ -100,12 +112,18 @@ export const CheckoutScreen = () => {
 
         <Spacer position="top" size="xxl" />
 
-        <PayButton icon="cash" mode="contained" onPress={onPay}>
+        <PayButton
+          disabled={isLoading}
+          icon="cash"
+          mode="contained"
+          onPress={onPay}
+        >
           Pay
         </PayButton>
 
         <Spacer position="top" size="large">
           <ClearButton
+            disabled={isLoading}
             icon="cart-off"
             mode="contained"
             onPress={removeFromCart}
@@ -119,3 +137,4 @@ export const CheckoutScreen = () => {
 };
 
 //move NameInput outside of scroll view
+//remove restaurant picture
