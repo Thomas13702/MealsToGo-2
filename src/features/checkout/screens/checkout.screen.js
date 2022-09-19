@@ -21,7 +21,7 @@ import { RestaurantInfoCard } from "../../restaurants/components/restaurant-info
 import { payRequest } from "../../../services/checkout/checkout.service";
 
 export const CheckoutScreen = () => {
-  const { cart, restaurant, sum, removeFromCart } = useContext(CartContext);
+  const { cart, restaurant, sum, clearCart } = useContext(CartContext);
   const [name, setName] = useState("");
   const [card, setCard] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -39,6 +39,7 @@ export const CheckoutScreen = () => {
     payRequest(card.id, sum, name)
       .then((result) => {
         setIsLoading(false);
+        clearCart();
       })
       .catch((err) => {
         setIsLoading(false);
@@ -59,21 +60,22 @@ export const CheckoutScreen = () => {
       }
     );
 
-    if (!cart.length || !restaurant) {
-      return (
-        <SafeArea>
-          <CartIconContainer>
-            <CartIcon icon="cart-off" />
-            <Text>Your cart is empty</Text>
-          </CartIconContainer>
-        </SafeArea>
-      );
-    }
     return () => {
       keyboardDidHideListener.remove();
       keyboardDidShowListener.remove();
     };
   }, []);
+
+  if (!cart.length || !restaurant) {
+    return (
+      <SafeArea>
+        <CartIconContainer>
+          <CartIcon icon="cart-off" />
+          <Text>Your cart is empty</Text>
+        </CartIconContainer>
+      </SafeArea>
+    );
+  }
 
   return (
     <SafeArea>
@@ -126,7 +128,7 @@ export const CheckoutScreen = () => {
             disabled={isLoading}
             icon="cart-off"
             mode="contained"
-            onPress={removeFromCart}
+            onPress={clearCart}
           >
             Clear Cart
           </ClearButton>
